@@ -16,17 +16,16 @@ $ rails db:migrate db:seed
 
 This will download all the dependencies for our app and set up the database.
 
-| HTTP Verb    | Path       | Controller#Action | Description            |
-| ------------ | ---------- | ----------------- | ---------------------- |
-| GET          | /birds     | birds#index       | Show all birds         |
-| POST         | /birds     | birds#create      | Create a new bird      |
-| GET          | /birds/:id | birds#show        | Show a specific bird   |
-| PATCH or PUT | /birds/:id | birds#update      | Update a specific bird |
-| DELETE       | /birds/:id | birds#destroy     | Delete a specific bird |
+| HTTP Verb        | Path           | Controller#Action     | Description                |
+| ---------------- | -------------- | --------------------- | -------------------------- |
+| GET              | /birds         | birds#index           | Show all birds             |
+| POST             | /birds         | birds#create          | Create a new bird          |
+| GET              | /birds/:id     | birds#show            | Show a specific bird       |
+| PATCH or PUT     | /birds/:id     | birds#update          | Update a specific bird     |
+| **DELETE**       | **/birds/:id** | **birds#destroy**     | **Delete a specific bird** |
 
-## Video Walkthrough
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XmTWuLphloM?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+<!-- ## Video Walkthrough -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/XmTWuLphloM?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
 
 ## Deleting a Bird
 
@@ -116,6 +115,13 @@ Make sure to test these out in Postman to see the difference between using
 
 Now that we've covered the Delete action, you can perform all four CRUD actions
 with Rails and do so following RESTful conventions!
+
+## Check For Understanding
+
+Before you move on, make sure you can answer the following question:
+
+1. What options did you learn about in this lesson for returning information to
+   your users about the status of a delete request?
 
 ## Resources
 
